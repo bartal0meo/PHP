@@ -1,0 +1,27 @@
+/**
+* @ORM\Entity
+* @ORM\Table(name="product")
+*/
+class Product
+{
+/**
+* @ORM\Column(type="integer")
+* @ORM\Id
+* @ORM\GeneratedValue(strategy="AUTO")
+*/
+protected $id;
+
+/**
+* @ORM\Column(name="title",type="string", length=100)
+*/
+protected $name;
+
+/**
+* @ORM\Column(type="decimal", scale=2)
+*/
+protected $price;
+
+/**
+* @ORM\Column(type="text")
+*/
+prote
